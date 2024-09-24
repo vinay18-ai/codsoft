@@ -1,0 +1,31 @@
+def simple_chatbot():
+    print("Welcome to the Simple Chatbot! Type 'exit' to end the conversation.")
+
+    while True:
+        user_input = input("You: ").lower()
+
+        if user_input == 'exit':
+            print("Chatbot: Goodbye! Have a great day!")
+            break
+        elif 'hello' in user_input or 'hi' in user_input:
+            print("Chatbot: Hello! How can I assist you today?")
+        elif 'how are you' in user_input:
+            print("Chatbot: I'm just a bunch of code, but I'm here to help you!")
+        elif 'your name' in user_input:
+            print("Chatbot: I'm a simple chatbot created to assist you.")
+        elif 'help' in user_input:
+            print("Chatbot: Sure! What do you need help with?")
+        elif 'thank you' in user_input:
+            print("Chatbot: You're welcome! If you have any more questions, feel free to ask.")
+        elif 'time' in user_input:
+            print("Chatbot: I can't have the access to current time for now.")
+        elif 'who are you' in user_input:
+            print("Chatbot: Iam just a simple chatbot.")
+        elif "weather" in user_input:
+            print("Chatbot: The Weather is very pleasant today. ")
+        else:
+            print("Chatbot: I'm sorry, I didn't understand that. Still Iam a developing simple chatbot")
+
+
+# Run the chatbot
+simple_chatbot()
